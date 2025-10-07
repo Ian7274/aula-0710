@@ -1,0 +1,23 @@
+html_content = '''
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapas de um Projeto</title>
+</head>
+<body>
+    <h1>Etapas do Projeto</h1>
+    <ol>
+        <li>Planejamento</li>
+        <li>Análise de Viabilidade</li>
+        <li>Execução</li>
+        <li>Testes</li>
+        <li>Entrega</li>
+    </ol>
+</body>
+</html>
+'''
+
+with open('etapas_projeto.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
