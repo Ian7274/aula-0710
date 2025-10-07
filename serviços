@@ -1,0 +1,22 @@
+html_content = '''
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Serviços</title>
+</head>
+<body>
+    <h1>Nossos Serviços</h1>
+    <ul>
+        <li>Desenvolvimento Web</li>
+        <li>Aplicativos Mobile</li>
+        <li>Consultoria em TI</li>
+        <li>Suporte Técnico</li>
+    </ul>
+</body>
+</html>
+'''
+
+with open('servicos.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
