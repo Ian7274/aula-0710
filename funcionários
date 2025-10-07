@@ -1,0 +1,74 @@
+html_content = '''
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Funcionários</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nossos Funcionários</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Setor</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td>Gerente de Projetos</td>
+                <td>Desenvolvimento</td>
+                <td>ana.silva@empresa.com</td>
+                <td>(11) 98765-4321</td>
+            </tr>
+            <tr>
+                <td>Bruno Costa</td>
+                <td>Desenvolvedor Sênior</td>
+                <td>Desenvolvimento</td>
+                <td>bruno.costa@empresa.com</td>
+                <td>(11) 91234-5678</td>
+            </tr>
+            <tr>
+                <td>Carla Dias</td>
+                <td>Analista de RH</td>
+                <td>Recursos Humanos</td>
+                <td>carla.dias@empresa.com</td>
+                <td>(11) 99887-6655</td>
+            </tr>
+            <tr>
+                <td>Daniel Rocha</td>
+                <td>Suporte Técnico</td>
+                <td>TI</td>
+                <td>daniel.rocha@empresa.com</td>
+                <td>(11) 97766-5544</td>
+            </tr>
+            <tr>
+                <td>Elisa Santos</td>
+                <td>Designer UX/UI</td>
+                <td>Design</td>
+                <td>elisa.santos@empresa.com</td>
+                <td>(11) 96655-4433</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+'''
+
+with open('funcionarios.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
